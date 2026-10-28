@@ -73,8 +73,8 @@ function Hero() {
 
   return (
     <>
-      <section className="bg-black max-w-[1100px]   text-white flex  justify-between mt-20 mx-auto px-5  h-screen  pt-24">
-        <div className=" ">
+      <section className="bg-black max-w-[1100px]  text-white  grid grid-cols-2 mt-20 mx-auto px-5  h-screen ">
+        <div className=" mt-20">
           <div className="text-2xl my-2 font-bold">
             <h1 className="text-orange-500">Hi, I am</h1>
           </div>
@@ -125,7 +125,14 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div></div>
+
+        <div className="flex justify-center  ">
+          <img
+            src={self}
+            alt="Kazi Mohammad Kaif"
+            className="w-[500px] h-[500px]  object-cover rounded-full border-4 border-blue-500/50 shadow-lg shadow-blue-500/20 hover:scale-105 transition-transform duration-300"
+          />
+        </div>
       </section>
     </>
   );
