@@ -39,13 +39,16 @@ function Experience() {
                   MERN
                 </span>
                 <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
-                  Express
+                  JWT
+                </span>{" "}
+                <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
+                  RESTful Api
                 </span>
                 <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
-                  Node
-                </span>
+                  AI Integration
+                </span>{" "}
                 <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
-                  MongoDB
+                  DSA
                 </span>
               </div>
               <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base leading-7 text-gray-300 font-semibold">
@@ -93,7 +96,8 @@ function Experience() {
                 </span>
                 <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
                   JavaScript
-                </span>  <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
+                </span>{" "}
+                <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
                   Bootstrap
                 </span>
                 <span className="bg-gray-900 border border-white/10 text-gray-300 rounded-lg px-3 py-1">
@@ -107,7 +111,10 @@ function Experience() {
               <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base leading-7 text-gray-300 ">
                 <li>
                   Developed responsive user interfaces using React.js,
-                  JavaScript, HTML, and CSS.
+                  JavaScript, HTML, and CSS and focused on{" "}
+                  <span className="text-blue-500 font-bold">
+                    Frontend Development
+                  </span>
                 </li>
                 <li>
                   Built interactive and reusable UI components using React.js
@@ -120,10 +127,10 @@ function Experience() {
               </ul>
             </div>
           </div>
-          <div className="flex font-medium gap-2">
-            <span>Oct 2024</span>
+          <div className="font-medium w-56 text-right">
+            <span className="">Oct 2024</span>
             <span> - </span>
-            <span>April 2025</span>
+            <span className="">April 2025</span>
           </div>
         </div>
       </section>{" "}
