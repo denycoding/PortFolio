@@ -43,7 +43,7 @@ function Header() {
   const linkClass = (id) =>
     `px-4 py-2 rounded-xl transition-all duration-300 ${
       activeId === id
-        ? "bg-violet-500/30 text-white"
+        ? "bg-blue-500/30 text-white"
         : "text-gray-300 hover:text-white hover:bg-blue-500/10"
     }`;
 
