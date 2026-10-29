@@ -178,14 +178,14 @@ function Hero() {
             </div>
 
             <span
-              className="absolute bottom-3 right-0 sm:bottom-5 sm:right-2 flex items-center gap-2 rounded-full
-                bg-gray-900/90 px-3 py-1.5 text-xs font-medium text-white ring-1 ring-white/10"
+              className="absolute bottom-1  sm:bottom- sm:right-14 flex items-center gap-2 rounded-full
+                bg-gray-900 px-3 py-1.5 text-x1 font-medium text-white ring-1 ring-white/10"
             >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 motion-safe:animate-ping" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              Full Stack Developer{" "}
+              {"</> "}Full Stack Developer{" "}
             </span>
           </div>
         </div>
