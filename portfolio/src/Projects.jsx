@@ -1,5 +1,6 @@
 import cafe from "./assets/Denys_Artisan_Cafe.png";
 import denydev from "./assets/DenyDev_AI_Freelance_Marketplace.png";
+import youtube from "./assets/youtube.png";
 import { MdArrowOutward } from "react-icons/md";
 
 function Projects() {
@@ -32,7 +33,7 @@ function Projects() {
     },
     {
       id: 3,
-      img: cafe,
+      img: youtube,
       heading: "YouTube Clone",
       p: "YouTube Clone is a responsive video browsing platform built with React.js, featuring video search, dynamic listings, category-based browsing, and seamless API integration.",
       skills: ["React.js", "JavaScript", "REST API", "CSS"],
