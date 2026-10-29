@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { FaInstagram, FaDownload, FaUser } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaDownload } from "react-icons/fa6";
+import { FaLinkedinIn, FaUser } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import self from "./assets/self.png";
@@ -49,7 +49,6 @@ function useTypewriter(words) {
 
   useEffect(() => {
     const current = words[wordIndex];
-
     let delay = isDeleting ? DELETE_SPEED : TYPE_SPEED;
 
     if (!isDeleting && text === current) {
@@ -85,75 +84,41 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-black text-white flex items-center pt-28 pb-16 sm:pt-32 md:pt-24"
+      className="flex min-h-screen items-center bg-black px-4 pb-12 pt-24 text-white sm:px-6 sm:pb-16 sm:pt-28 md:px-8 md:pt-24"
     >
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-4 sm:px-6 md:grid-cols-2 md:gap-8 lg:gap-14 lg:px-8">
-
-        {/* Profile Image */}
-        <div className="order-1 flex justify-center md:order-2">
-          <div className="group relative w-fit max-w-full">
-
-            {/* Image Border */}
-            <div className="relative rounded-full bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 p-1">
-              <div className="overflow-hidden rounded-full bg-black">
-                <img
-                  src={self}
-                  alt="Kazi Mohammad Kaif"
-                  fetchPriority="high"
-                  className="block h-56 w-56 max-w-full rounded-full object-cover object-top transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 xs:h-64 xs:w-64 sm:h-72 sm:w-72 md:h-64 md:w-64 lg:h-80 lg:w-80 xl:h-[360px] xl:w-[360px]"
-                />
-              </div>
-            </div>
-
-            {/* Developer Badge */}
-            <div className="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-gray-700 bg-gray-900 px-3 py-2 text-xs font-medium text-white shadow-lg sm:text-sm md:left-auto md:right-0 md:translate-x-1/4 lg:right-2 lg:translate-x-0">
-              <span className="relative flex h-2 w-2 shrink-0">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-              </span>
-
-              <span>{"</>"} Full Stack Developer</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Text Content */}
-        <div className="order-2 min-w-0 text-center md:order-1 md:text-left">
-
-          <p className="text-lg font-bold text-blue-400 sm:text-xl md:text-2xl">
+      <div className="mx-auto grid w-full max-w-[1100px] grid-cols-1 items-center gap-10 sm:gap-12 md:grid-cols-2 md:gap-8 lg:gap-12">
+        {/* Text */}
+        <div className="order-last min-w-0 text-center md:order-first md:text-left">
+          <p className="text-lg font-bold text-orange-500 sm:text-xl md:text-2xl">
             Hi, I am
           </p>
 
-          <h1 className="mt-2 break-words text-3xl font-bold tracking-tight sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
             Kazi Mohammad Kaif
           </h1>
 
-          {/* Typewriter Title */}
-          <div className="mt-4 flex min-h-[4rem] items-center justify-center md:justify-start">
-            <p className="max-w-full break-words text-xl font-bold leading-snug sm:text-2xl lg:text-3xl">
-              <span>A </span>
-              <span className="text-blue-500">{typedTitle}</span>
-              <span
-                aria-hidden="true"
-                className="text-blue-500 motion-safe:animate-pulse"
-              >
-                |
-              </span>
-            </p>
-          </div>
-
-          {/* Introduction */}
-          <p className="mx-auto mt-5 max-w-xl text-sm font-medium leading-7 text-gray-400 sm:text-base md:mx-0 lg:text-lg">
-            Full-stack developer transforming complex requirements into
-            reliable software. I build responsive{" "}
-            <span className="text-blue-400">React</span> frontends, robust{" "}
-            <span className="text-blue-400">Node.js</span> backends, and
-            practical <span className="text-blue-400">AI</span> features that
-            improve user experiences and workflows.
+          <p className="mt-3 flex min-h-[3.5rem] flex-wrap items-center justify-center gap-x-1 text-xl font-bold sm:min-h-[2.5rem] sm:text-2xl lg:text-3xl md:justify-start">
+            <span>A</span>
+            <span className="text-blue-500">{typedTitle}</span>
+            <span
+              aria-hidden="true"
+              className="text-blue-500 motion-safe:animate-pulse"
+            >
+              |
+            </span>
           </p>
 
-          {/* Social Links */}
-          <ul className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4 md:justify-start">
+          <p className="mx-auto mt-5 max-w-lg text-sm font-medium leading-relaxed text-gray-400 sm:text-base md:mx-0">
+            Full-stack engineer transforming complex requirements into reliable
+            software. I craft accessible{" "}
+            <span className="text-purple-500">React</span> frontends, robust{" "}
+            <span className="text-purple-500">Node.js</span> backends, and
+            targeted <span className="text-purple-500">AI</span> features that
+            optimize user experience and workflows.
+          </p>
+
+          {/* Social links */}
+          <ul className="mt-6 flex justify-center gap-3 sm:gap-4 md:justify-start">
             {SOCIAL_LINKS.map(({ label, icon, href }) => (
               <li key={label}>
                 <a
@@ -161,7 +126,7 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-700 text-lg text-gray-300 transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 sm:h-11 sm:w-11"
+                  className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 text-lg text-gray-300 transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 sm:h-11 sm:w-11"
                 >
                   {icon}
                 </a>
@@ -169,7 +134,7 @@ function Hero() {
             ))}
           </ul>
 
-          {/* Action Buttons */}
+          {/* Actions */}
           <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4 md:justify-start">
             <a
               href="#contact"
@@ -187,6 +152,39 @@ function Hero() {
               Download CV
               <FaDownload aria-hidden="true" />
             </a>
+          </div>
+        </div>
+
+        {/* Photo */}
+        <div className="order-first flex justify-center md:order-last">
+          <div className="group relative">
+            {/* Background glow */}
+            <div
+              aria-hidden="true"
+              className="absolute -inset-3 rounded-full bg-gradient-to-tr from-blue-500/30 via-indigo-500/20 to-cyan-400/30 opacity-70 blur-2xl transition-opacity duration-500"
+            />
+
+            {/* Photo border */}
+            <div className="relative rounded-full bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 p-1">
+              <div className="rounded-full bg-black p-1">
+                <div className="overflow-hidden rounded-full">
+                  <img
+                    src={self}
+                    alt="Kazi Mohammad Kaif"
+                    className="block h-64 w-52 max-w-full object-cover object-top transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 sm:h-80 sm:w-64 md:h-[380px] md:w-[300px] lg:h-[460px] lg:w-[320px]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Developer badge */}
+            <span className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-gray-900 px-3 py-2 text-xs font-medium text-white ring-1 ring-white/10 sm:bottom-5 sm:px-4 sm:text-sm">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+              </span>
+              {"</>"} Full Stack Developer
+            </span>
           </div>
         </div>
       </div>
