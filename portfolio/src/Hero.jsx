@@ -172,8 +172,7 @@ function Hero() {
                   <img
                     src={self}
                     alt="Kazi Mohammad Kaif"
-                    className="block h-64 w-full max-w-full object-cover pl-5 object-top transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 sm:h-80 sm:w-64 md:h-[380px] md:w-[300px] lg:h-[480px] lg:w-[320px]"
-                  />
+className="block h-64 w-52 max-w-full object-cover object-top pl-2 transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 sm:h-72 sm:w-56 md:h-[380px] md:w-[280px] lg:h-[480px] lg:w-[320px]"                  />
                 </div>
               </div>
             </div>
