@@ -77,6 +77,7 @@ function useTypewriter(words) {
 
   return text;
 }
+let resume = "/Kazi_Mohammad_Kaif_Resume.pdf";
 
 function Hero() {
   const typedTitle = useTypewriter(TITLES);
@@ -145,8 +146,8 @@ function Hero() {
             </a>
 
             <a
-              href="/Kazi-Mohammad-Kaif-CV.pdf"
-              download
+              href={resume}
+              target="_blank"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-3 text-sm font-bold text-white transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:px-5 sm:text-base"
             >
               Download CV
@@ -171,7 +172,7 @@ function Hero() {
                   <img
                     src={self}
                     alt="Kazi Mohammad Kaif"
-                    className="block h-64 w-52 max-w-full object-cover pl-5 object-top transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 sm:h-80 sm:w-64 md:h-[380px] md:w-[300px] lg:h-[460px] lg:w-[320px]"
+                    className="block h-64 w-full max-w-full object-cover pl-5 object-top transition-transform duration-500 ease-out motion-safe:group-hover:scale-105 sm:h-80 sm:w-64 md:h-[380px] md:w-[300px] lg:h-[480px] lg:w-[320px]"
                   />
                 </div>
               </div>
