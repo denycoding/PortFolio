@@ -37,7 +37,7 @@ function Projects() {
       heading: "YouTube Clone",
       p: "YouTube Clone is a responsive video browsing platform built with React.js, featuring video search, dynamic listings, category-based browsing, and seamless API integration.",
       skills: ["React.js", "JavaScript", "REST API", "CSS"],
-      url: "YOUR_YOUTUBE_CLONE_URL",
+      url: "https://youtube-clone-xi-ten-87.vercel.app/",
     },
   ];
   return (
