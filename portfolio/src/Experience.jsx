@@ -14,18 +14,16 @@ const experiences = [
     skills: ["MERN", "JWT", "RESTful API", "AI Integration", "DSA"],
     points: [
       <>
-        Practiced{" "}
-        <span className="font-bold text-blue-500">full-stack</span> web
-        development using the MERN stack.
+        Practiced <span className="font-bold text-blue-500">full-stack</span>{" "}
+        web development using the MERN stack.
       </>,
       <>
         Implemented authentication, authorization, API integration, and
         application deployment.
       </>,
       <>
-        Explored{" "}
-        <span className="font-bold text-blue-500">AI integration</span> to
-        build smarter and more efficient web applications.
+        Explored <span className="font-bold text-blue-500">AI integration</span>{" "}
+        to build smarter and more efficient web applications.
       </>,
     ],
   },
@@ -61,7 +59,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="mx-auto max-w-[1100px] scroll-mt-24 bg-black px-4 pb-16 pt-20 text-white sm:px-6 sm:pt-24 lg:px-8"
+      className="mx-auto w-full max-w-[1100px] scroll-mt-20 bg-black px-4 pb-12 pt- text-white sm:px-6 sm:pb-16 sm:pt-1 md:px-8 lg:px-10"
     >
       {/* Section Heading */}
       <div className="mb-10 text-center sm:mb-14">
@@ -74,8 +72,8 @@ function Experience() {
         </h2>
 
         <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-gray-400 sm:text-base">
-          My professional experience, technical contributions, and journey as
-          a developer.
+          My professional experience, technical contributions, and journey as a
+          developer.
         </p>
 
         <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-blue-500" />
